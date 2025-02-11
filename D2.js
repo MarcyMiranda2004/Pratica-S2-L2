@@ -125,6 +125,27 @@ if (n9 > n10 && n9 > n11 && n10 > n11) {
   console.log(n11, n10, n9);
 }
 
+// seconda soluzione
+if (n9 >= n10 && n9 >= n11) {
+  if (n10 >= n11) {
+    console.log(n9, n10, n11);
+  } else {
+    console.log(n9, n11, n10);
+  }
+} else if (n10 >= n9 && n10 >= n11) {
+  if (n9 >= n11) {
+    console.log(n10, n9, n11);
+  } else {
+    console.log(n10, n11, n9);
+  }
+} else {
+  if (n9 >= n10) {
+    console.log(n11, n9, n10);
+  } else {
+    console.log(n11, n10, n9);
+  }
+}
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
